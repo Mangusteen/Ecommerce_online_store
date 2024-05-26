@@ -1,0 +1,15 @@
+.breadcrumbs {
+  display: flex;
+}
+
+.link {
+  color: var(--dark);
+}
+
+.link:not(:last-child) {
+  margin-right: 15px;
+}
+
+.link:hover {
+  color: var(--orange-dark);
+}

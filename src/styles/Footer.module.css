@@ -1,0 +1,18 @@
+.footer {
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+  justify-content: space-between;
+
+}
+
+.info {
+  display: flex;
+}
+.link {
+  color: var(--dark);
+}
+
+.link:not(:last-child) {
+  margin-right: 15px;
+}
