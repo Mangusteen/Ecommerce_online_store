@@ -1,8 +1,11 @@
-# React + Vite
+# Ecommerce Online Store Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project was made using technologies such as **React**, **Javascript**, **Redux Toolkit**, **CSS Modules**. 
+To create this project i used REST API - [Fake Sore API](https://fakestoreapi.com/). For tracking the state of the application i used Redux Toolkit.
 
-Currently, two official plugins are available:
+The following pages are implemented in the application: *Home, Products, Page of Single Product, Page of specific category of products, Cart*.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I also developed functionality to **add products to cart**, **increase/decrease the number of products** in the cart, as well as **delete from the cart**. 
+
+Moreover, i have included the **possibility of login**. Unfortunately, Fake Store Api gives the opportunity to login only to users who are included in the database.
+
