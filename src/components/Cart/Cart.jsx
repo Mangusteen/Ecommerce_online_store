@@ -55,7 +55,7 @@ export default function Cart() {
                     <span>{quantity || <Skeleton />}</span>
                     <div className={styles.plus} onClick={() => changeQuantity(item, Math.max(1, quantity + 1))}><img src={plus} alt="plus" /></div>
                   </div>
-                  <div className={styles.price}>{price || <Skeleton />}$</div>
+                  <div className={styles.price}>{Math.floor(price) || <Skeleton />}$</div>
                   <div className={styles.totalPrice}>{Math.floor(price * quantity)}$</div>
                   <div className={styles.delete} onClick={() => deleteItem(id)}>
                     <img src={close} alt="delete-icon" />

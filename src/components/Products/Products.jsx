@@ -18,7 +18,7 @@ export default function Products({ products = [], title }) {
             <div className={styles.image} style={{ backgroundImage: `url(${image})` }}></div>
             <div className={styles.info}>
               <div className={styles.title}>{title || <Skeleton />}</div>
-              <div className={styles.price}>{price || <Skeleton />}$</div>
+              <div className={styles.price}>{Math.floor(price) || <Skeleton />}$</div>
             </div>
           </Link>
         )}
