@@ -15,7 +15,7 @@ export default function ProductsPage() {
   }, [dispatch])
   return (
     <>
-      <h1 style={{ textAlign: 'center', fontSize: '30px' }}>Products</h1>
+      <h1 style={{ textAlign: 'center', fontSize: '24px', textTransform: 'uppercase' }}>Products</h1>
       <CategoriesRow categories={categories} />
       <Products products={list} />
     </>

@@ -10,7 +10,7 @@ export default function Products({ products = [], title }) {
   const list = products;
 
   return (
-    <section style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} className={styles.products}>
+    <section className={styles.products}>
       <h1 className={styles.title}>{title}</h1>
       <div className={styles.content}>
         {list.map(({ id, title, price, image }) =>
@@ -19,7 +19,6 @@ export default function Products({ products = [], title }) {
             <div className={styles.info}>
               <div className={styles.title}>{title || <Skeleton />}</div>
               <div className={styles.price}>{price || <Skeleton />}$</div>
-              <button>Add to cart</button>
             </div>
           </Link>
         )}

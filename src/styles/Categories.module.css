@@ -19,3 +19,8 @@
 .category:not(:last-child) {
   margin-right: 20px;
 }
+.category:hover {
+  border: 1px solid var(--orange-dark);
+  background-color: var(--orange);
+  transition: all .15s ease 0s;
+}

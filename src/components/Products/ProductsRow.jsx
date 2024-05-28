@@ -23,7 +23,6 @@ export default function ProductsRow() {
   return (
     <>
       {isLoading ? ("Loading...") : (<Products products={withLimits} title='Latest Products' />)}
-      {/* переделать кнопку линк в отдельный компонент */}
       <div style={{ display: 'flex', justifyContent: 'center' }}>
         <Link to={ROUTES.PRODUCTS} className={styles.link}>Show all</Link>
       </div>
